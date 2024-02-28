@@ -1,0 +1,29 @@
+//Create a user
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Mokhamad Yusron",
+    "email": "mokhamadyusron@gmail.com",
+    "gender": "Male",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "user"
+}
+
+###
+//Get all user
+GET http://localhost:5000/users
+
+###
+//Login user
+POST http://localhost:5000/login
+Content-Type: application/json
+{
+    "email" : "mokhamadyusron@gmail.com",
+    "password" : "123456"
+}
+
+###
+GET http://localhost:5000/me
